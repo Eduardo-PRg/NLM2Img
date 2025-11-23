@@ -51,8 +51,26 @@ const App: React.FC = () => {
             </div>
             <h1 className="text-xl font-bold text-slate-900 tracking-tight">PDF Stitcher <span className="text-slate-400 font-light">&</span> Seal</h1>
           </div>
-          <div className="text-sm font-medium text-slate-500">
-             Privacy First: Processing happens in your browser
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://github.com/cclank/NLM2Img"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://x.com/LufzzLiz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors"
+            >
+              Author
+            </a>
+            <div className="text-sm font-medium text-slate-500">
+               Privacy First: Processing happens in your browser
+            </div>
           </div>
         </div>
       </header>
