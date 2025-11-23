@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { PdfPageImage, StampConfig } from '../types';
+import { PdfPageImage, StampConfig, LayoutMode } from '../types';
 import { stitchImagesAndStamp } from '../services/pdfService';
 import { Download, Loader2 } from 'lucide-react';
 
@@ -7,9 +7,10 @@ interface PreviewAreaProps {
   pages: PdfPageImage[];
   stampConfig: StampConfig;
   isProcessing: boolean;
+  layoutMode: LayoutMode;
 }
 
-const PreviewArea: React.FC<PreviewAreaProps> = ({ pages, stampConfig, isProcessing }) => {
+const PreviewArea: React.FC<PreviewAreaProps> = ({ pages, stampConfig, isProcessing, layoutMode }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [isStitching, setIsStitching] = useState(false);
@@ -95,7 +96,7 @@ const PreviewArea: React.FC<PreviewAreaProps> = ({ pages, stampConfig, isProcess
     return canvas;
   };
 
-  // Re-generate the stitched image whenever pages or stamp config changes
+  // Re-generate the stitched image whenever pages, stamp config, or layout mode changes
   useEffect(() => {
     if (pages.length === 0) return;
 
@@ -105,20 +106,20 @@ const PreviewArea: React.FC<PreviewAreaProps> = ({ pages, stampConfig, isProcess
       await new Promise(r => setTimeout(r, 50));
       
       const stampCanvas = createStampCanvas();
-      const url = await stitchImagesAndStamp(pages, stampCanvas);
+      const url = await stitchImagesAndStamp(pages, stampCanvas, layoutMode);
       setPreviewUrl(url);
       setIsStitching(false);
     };
 
     generate();
-  }, [pages, stampConfig]);
+  }, [pages, stampConfig, layoutMode]);
 
 
   const handleDownload = () => {
     if (!previewUrl) return;
     const link = document.createElement('a');
     link.href = previewUrl;
-    link.download = `stamped_document_${Date.now()}.jpg`;
+    link.download = `stamped_document_${layoutMode}_${Date.now()}.jpg`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

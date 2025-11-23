@@ -6,6 +6,8 @@ export enum ProcessingStatus {
   ERROR = 'ERROR'
 }
 
+export type LayoutMode = 'vertical' | 'grid';
+
 export interface StampConfig {
   text: string;
   subText: string;

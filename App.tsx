@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { ProcessingStatus, StampConfig, PdfPageImage } from './types';
+import { ProcessingStatus, StampConfig, PdfPageImage, LayoutMode } from './types';
 import UploadZone from './components/UploadZone';
 import StampControls from './components/StampControls';
+import LayoutControls from './components/LayoutControls';
 import PreviewArea from './components/PreviewArea';
 import { convertPdfToImages } from './services/pdfService';
 import { FileText, ScrollText } from 'lucide-react';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
   const [pdfPages, setPdfPages] = useState<PdfPageImage[]>([]);
   const [stampConfig, setStampConfig] = useState<StampConfig>(DEFAULT_STAMP);
   const [fileName, setFileName] = useState<string>('');
+  const [layoutMode, setLayoutMode] = useState<LayoutMode>('vertical');
 
   const handleFileSelect = async (file: File) => {
     try {
@@ -91,6 +93,11 @@ const App: React.FC = () => {
                  </button>
               </div>
 
+              <LayoutControls 
+                currentMode={layoutMode}
+                onChange={setLayoutMode}
+              />
+
               <StampControls 
                 config={stampConfig} 
                 onChange={setStampConfig} 
@@ -102,6 +109,7 @@ const App: React.FC = () => {
               <PreviewArea 
                 pages={pdfPages} 
                 stampConfig={stampConfig} 
+                layoutMode={layoutMode}
                 isProcessing={status === ProcessingStatus.PROCESSING_PDF}
               />
             </div>
